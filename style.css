@@ -464,6 +464,16 @@ li.rating {
   font-weight: bold;
 }
 
+footer {
+  height: 80px;
+  background-color: #db3022;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 576px) {
   .navbar {
     display: flex;
