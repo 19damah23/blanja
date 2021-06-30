@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="register.css">
+  <title>Sign Up | Blanja</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img src="../../asset/logo.svg" alt="bag">
+      <h1>Blanja</h1></a>
+    </div>
+
+    <main>
+      <h5>Please sign up with your account</h5>
+
+      <div class="role">
+        <button class="customer">Customer</button>
+        <button class="seller active">Seller</button>
+      </div>
+
+      <form class="form" action="../Login/login.html">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="phone" placeholder="Phone number" required>
+        <input type="text" name="store" placeholder="Store name" required>
+        <input type="password" name="email" placeholder="Password" required>
+        <button type="submit" class="submit">Register</button>
+      </form>
+
+      <h5 class="ask">Already have a Blanja account?<a href="../Login/login.html"> Login</a></h5>
+    </main>
+  </div>
+</body>
+</html>
