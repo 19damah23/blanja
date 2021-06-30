@@ -527,16 +527,16 @@ a.delete {
     height: 30px;
   }
 
-  form img.search {
+  form.d-flex img.search {
     bottom: 80%;
     right: 40px;
   }
 
-  form span {
+  form.d-flex span {
     margin-top: 10px;
   }
 
-  form span img {
+  form.d-flex span img {
     bottom: 25%;
     right: 48%;
   }
