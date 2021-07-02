@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="confirm.css">
-  <title>Reset Password | Blanja</title>
+  <link rel="stylesheet" href="login.css">
+  <title>Login | Blanja</title>
 </head>
 <body>
   <div class="container">
@@ -16,13 +16,13 @@
     </div>
 
     <main>
-      <h5>Reset Password</h5>
+      <h5>Please login with your account</h5>
 
-      <span>You need to change your password to activate your account</span>
+      <span>We have sent an email containing a password reset instruction to your email. please check your email.</span>
 
       <form class="form" action="/">
+        <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="password" name="confirm_password" placeholder="New Password Confirmation" required>
         <a href="/">Forgot password?</a>
         <button type="submit" class="submit">Login</button>
       </form>
