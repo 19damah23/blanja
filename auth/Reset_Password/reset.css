@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Metropolis;
+  src: url("/asset/Metropolis_Font_Family_\(Fontmirror\)/Metropolis-Regular 400.otf");
+}
+
+body {
+  font-family: Metropolis;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #db3022;
+  padding-top: 10px;
+}
+
+.logo img {
+  margin-right: 7px;
+}
+
+main {
+  text-align: center;
+}
+
+main .form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+main .form input {
+  width: 400px;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 23px;
+  border-radius: 4px;
+  border: 1px solid #9b9b9b;
+}
+
+main .form input[type="email"] {
+  margin-bottom: 16px;
+}
+
+.form a {
+  text-align: end;
+  margin: 26px 0;
+  text-decoration: none;
+  color: #db3022;
+  font-size: 14px;
+}
+
+button.submit {
+  cursor: pointer;
+  background: #db3022;
+  border: unset;
+  width: 400px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+main h5 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 40px 0 50px;
+}
+
+main h5.ask {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #222222;
+}
+
+main h5.ask a {
+  color: #db3022;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  main h5 {
+    font-size: 14px;
+    margin: 20px 0 30px;
+  }
+
+  main .form {
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  main .form input {
+    height: 40px;
+    width: 300px;
+  }
+
+  .form a {
+    margin: 20px 0 20px auto;
+  }
+
+  button.submit {
+    width: 300px;
+    height: 40px;
+  }
+
+  main h5.ask {
+    font-size: 12px;
+  }
+}
