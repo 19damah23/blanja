@@ -53,7 +53,7 @@ main {
   justify-content: center;
 }
 
-main .role button {
+main .role a {
   width: 123px;
   height: 48px;
   padding: unset;
@@ -63,24 +63,28 @@ main .role button {
   background: transparent;
   cursor: pointer;
   color: #9b9b9b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main .role button.customer {
+main .role a.customer {
   border-right: unset;
   border-radius: 4px 0 0 4px;
 }
 
-main .role button.seller {
+main .role a.seller {
   border-left: unset;
   border-radius: 0 4px 4px 0;
 }
 
-main .role button:hover {
+main .role a:hover {
   background-color: #db3022;
   color: #fff;
 }
 
-main .role button.active {
+main .role a.active {
   background-color: #db3022;
   color: #fff;
 }
@@ -145,12 +149,16 @@ main h5.ask a {
 }
 
 @media (max-width: 576px) {
+  .container {
+    min-height: 100vh;
+  }
+  
   main h5 {
     font-size: 14px;
     margin: 20px 0 30px;
   }
 
-  main .role button {
+  main .role a {
     width: 80px;
     height: 30px;
     font-size: 12px;

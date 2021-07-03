@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo {
@@ -44,25 +44,54 @@ body {
 
 main {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 450px;
 }
 
-main span {
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #f01f0e;
+.role {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .role a {
+  width: 123px;
+  height: 48px;
+  padding: unset;
+  margin: unset;
+  border-style: unset;
+  border: 1px solid #9b9b9b;
+  background: transparent;
+  cursor: pointer;
+  color: #9b9b9b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .role a.customer {
+  border-right: unset;
+  border-radius: 4px 0 0 4px;
+}
+
+main .role a.seller {
+  border-left: unset;
+  border-radius: 0 4px 4px 0;
+}
+
+main .role a:hover {
+  background-color: #db3022;
+  color: #fff;
+}
+
+main .role a.active {
+  background-color: #db3022;
+  color: #fff;
 }
 
 main .form {
   display: flex;
   flex-direction: column;
-  width: 400px;
   margin-top: 40px;
 }
 
@@ -73,12 +102,15 @@ main .form input {
   padding-left: 23px;
   border-radius: 4px;
   border: 1px solid #9b9b9b;
-  margin-bottom: 1rem;
+}
+
+main .form input[type="email"] {
+  margin-bottom: 16px;
 }
 
 .form a {
   text-align: end;
-  margin: 10px 5px 26px;
+  margin: 26px 0;
   text-decoration: none;
   color: #db3022;
   font-size: 14px;
@@ -103,19 +135,38 @@ main h5 {
   margin: 40px 0 50px;
 }
 
-@media (max-width: 576px) {
-  main {
-    width: 100%;
-  }
+main h5.ask {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #222222;
+}
 
+main h5.ask a {
+  color: #db3022;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    min-height: 100vh;
+  }
+  
   main h5 {
     font-size: 14px;
     margin: 20px 0 30px;
   }
+
+  main .role a {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+
   main .form {
     margin-top: 20px;
     align-items: center;
-    width: 300px;
   }
 
   main .form input {
@@ -132,8 +183,7 @@ main h5 {
     height: 40px;
   }
 
-  main span {
-    font-size: 10px;
-    width: 90%;
+  main h5.ask {
+    font-size: 12px;
   }
 }
