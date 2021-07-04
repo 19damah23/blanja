@@ -8,7 +8,7 @@ div#navbarSupportedContent {
   justify-content: space-between;
 }
 
-nav {
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
   height: 100px;
   background: #ffffff;
   box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
@@ -42,22 +42,6 @@ form.d-flex {
   position: relative;
 }
 
-form span {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #8e8e93;
-  border-radius: 12px;
-}
-
-form span img {
-  width: 16.7px;
-  height: 15px;
-  position: absolute;
-  right: 2.3%;
-  transform: translateY(50%);
-  bottom: 50%;
-}
-
 form img.search {
   position: absolute;
   right: 72px;
@@ -66,10 +50,6 @@ form img.search {
   height: 15px;
   width: 15px;
   transform: translateY(40%);
-}
-
-form i:hover {
-  cursor: pointer;
 }
 
 form.d-flex input {
@@ -517,20 +497,6 @@ footer {
     height: 30px;
   }
 
-  form img.search {
-    bottom: 80%;
-    right: 40px;
-  }
-
-  form span {
-    margin-top: 10px;
-  }
-
-  form span img {
-    bottom: 25%;
-    right: 48%;
-  }
-
   ul.navbar-nav.ml-auto.mb-2.mb-lg-0 li {
     margin-top: 10px;
   }
@@ -560,7 +526,14 @@ footer {
     height: 7px;
   }
 
+  
   /* Category */
+  .list-category-product .slick-list.draggable img {
+    width: 120px !important;
+    height: 120px;
+    margin-right: 5px;
+  }
+
   .category-product {
     margin-top: 60px;
   }
@@ -577,7 +550,6 @@ footer {
   .category-product .list-category-product img {
     width: 100px;
     height: 100px;
-    margin-right: 5px;
   }
 
   .list-category-product img.indicator {

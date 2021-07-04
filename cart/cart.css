@@ -38,27 +38,6 @@ nav.navbar .container .navbar-brand {
   width: 31px;
 }
 
-form.d-flex {
-  position: relative;
-}
-
-form.d-flex span {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #8e8e93;
-  border-radius: 12px;
-}
-
-form.d-flex span img {
-  width: 16.7px;
-  height: 15px;
-  position: absolute;
-  right: 2.3%;
-  transform: translateY(50%);
-  bottom: 50%;
-  cursor: pointer;
-}
-
 form.d-flex img.search {
   position: absolute;
   right: 72px;
@@ -69,8 +48,8 @@ form.d-flex img.search {
   transform: translateY(25%);
 }
 
-form.d-flex i:hover {
-  cursor: pointer;
+form.d-flex {
+  position: relative;
 }
 
 form.d-flex input {
@@ -525,20 +504,6 @@ a.delete {
   form.d-flex input {
     width: 300px;
     height: 30px;
-  }
-
-  form.d-flex img.search {
-    bottom: 80%;
-    right: 40px;
-  }
-
-  form.d-flex span {
-    margin-top: 10px;
-  }
-
-  form.d-flex span img {
-    bottom: 25%;
-    right: 48%;
   }
 
   ul.navbar-nav.ml-auto.mb-2.mb-lg-0 li {

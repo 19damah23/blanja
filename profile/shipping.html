@@ -79,13 +79,17 @@
       <!-- End List Nav Asside -->
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex">
+        <form class="d-flex flex-row align-items-center">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <img class="search" src="../asset/Search Glyph.svg" alt="">
-          <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../asset/filter.svg"
-                alt="filter"></a></span>
+          <span><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z" fill="white" stroke="#8E8E93"/>
+              <path d="M29.3332 13.5H12.6665L19.3332 21.3833V26.8333L22.6665 28.5V21.3833L29.3332 13.5Z" stroke="#8E8E93" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a></span>
         </form>
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex flex-row justify-content-around">
           <li><a class="cart" href="../cart/cart.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
@@ -211,7 +215,97 @@
         </div>
       </div>
     </div>
-    <!-- Modal2 -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header filter">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+          </div>
+          <div class="colors">
+            <h5 class="title">Colors</h5>
+            <div class="list-color">
+              <div class="form-check">
+                <input class="form-check-input black" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input white" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input red" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input gray" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input cream" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input blue" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault1">
+              </div>
+            </div>
+          </div>
+          <div class="size">
+            <h5 class="title">Size</h5>
+            <div class="list-size">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input xs" type="checkbox" id="flexRadioDefault" name="flexRadioDefault">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input s" type="checkbox" id="flexRadioDefault" name="flexRadioDefault">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input m" type="checkbox" id="flexRadioDefault" name="flexRadioDefault">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input l" type="checkbox" id="flexRadioDefault" name="flexRadioDefault">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input xl" type="checkbox" id="flexRadioDefault" name="flexRadioDefault">
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h5 class="title">Category</h5>
+            <div class="list-category">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input all" type="checkbox" id="flexRadioDefault2" name="flexRadioDefault2">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input women" type="checkbox" id="flexRadioDefault2" name="flexRadioDefault2">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input men" type="checkbox" id="flexRadioDefault2" name="flexRadioDefault2">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input boys" type="checkbox" id="flexRadioDefault2" name="flexRadioDefault2">
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input girls" type="checkbox" id="flexRadioDefault2" name="flexRadioDefault2">
+              </div>
+            </div>
+          </div>
+          <div class="brand">
+            <h5 class="title">Brand</h5>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>adidas Originals, Jack & Jones, s.Oliver</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button button-secondary" data-bs-dismiss="modal">Discard</button>
+            <button type="button" class="button button-danger" data-bs-dismiss="modal">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content h-675">

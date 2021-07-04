@@ -42,23 +42,6 @@ form.d-flex {
   position: relative;
 }
 
-form span {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #8e8e93;
-  border-radius: 12px;
-}
-
-form span img {
-  width: 16.7px;
-  height: 15px;
-  position: absolute;
-  right: 2.3%;
-  transform: translateY(50%);
-  bottom: 50%;
-  cursor: pointer;
-}
-
 form img.search {
   position: absolute;
   right: 72px;
@@ -67,10 +50,6 @@ form img.search {
   height: 11px;
   width: 11px;
   transform: translateY(25%);
-}
-
-form i:hover {
-  cursor: pointer;
 }
 
 form.d-flex input {
@@ -313,7 +292,7 @@ form .row .col-8 .row .col-3.label {
   color: #9b9b9b;
 }
 
-select.form-select {
+select.form-select.profile {
   width: 100px;
   height: 40px;
   margin-right: 15px;
@@ -336,6 +315,210 @@ form button.submit {
   border-radius: 25px;
   margin-top: 48px;
   margin-left: 130px;
+}
+
+/* Modal Filter */
+.modal-content {
+  width: 450px;
+}
+
+.modal-header {
+  justify-content: flex-start;
+  padding: 5px;
+  box-shadow: 0px 0px 6px rgba(53, 50, 50, 0.25);
+}
+
+.modal-header .btn-close {
+  margin: 0;
+}
+
+.modal-header .modal-title {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  color: #222222;
+  margin-top: 2px;
+}
+
+.colors,
+.size,
+.category,
+.brand {
+  box-shadow: 0px 0px 6px rgba(53, 50, 50, 0.25);
+  padding: 20px 25px;
+}
+
+.colors .title,
+.size .title,
+.category .title,
+.brand .title {
+  font-family: Metropolis;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.colors .list-color {
+  display: flex;
+}
+
+.colors .list-color .form-check {
+  padding-left: 0;
+}
+
+.colors .list-color .form-check input {
+  width: 36px;
+  height: 36px;
+  margin: 15px 20px 15px 0;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.list-size .form-check input,
+.list-category .form-check input {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  border-radius: 0.25rem;
+}
+
+.list-category {
+  display: block;
+}
+
+.list-category .form-check input {
+  width: 100px;
+}
+
+.modal-content .category {
+  margin-top: unset;
+}
+
+.modal-content .brand select {
+  border: unset;
+  margin: unset;
+  padding: unset;
+  font-family: Metropolis;
+  font-size: 11px;
+  line-height: 11px;
+  color: #9b9b9b;
+}
+.modal-footer {
+  justify-content: space-evenly;
+  box-shadow: 0px -8px 10px rgba(217, 217, 217, 0.25);
+}
+
+.modal-footer .button {
+  width: 160px;
+  height: 36px;
+  background: unset;
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-family: Metropolis;
+  font-size: 14px;
+}
+
+.modal-footer .button-danger {
+  background: #db3022;
+  border: unset;
+  color: #fff;
+}
+
+.modal-footer .button-secondary {
+  border: 1px solid #222222;
+}
+
+.form-check .black {
+  background: #000;
+}
+
+.form-check .white {
+  background: #fff;
+  box-shadow: 1px 1px #8e8e8e;
+}
+
+.form-check .red {
+  background: #db3022;
+}
+
+.form-check .gray {
+  background: #8e8e93;
+}
+
+.form-check .cream {
+  background: #e2bb8d;
+}
+
+.form-check .blue {
+  background: #151867;
+}
+
+.colors .form-check .form-check-input:checked {
+  box-shadow: 0 0 0 1px #db3022;
+  background-image: unset;
+}
+
+.list-size .form-check .form-check-input.m::before {
+  content: "M";
+  font-weight: bold;
+}
+
+.list-size .form-check .form-check-input.s::before {
+  content: "S";
+  font-weight: bold;
+}
+
+.list-size .form-check .form-check-input.l::before {
+  content: "L";
+  font-weight: bold;
+}
+
+.list-size .form-check .form-check-input.xl::before {
+  content: "XL";
+  font-weight: bold;
+}
+
+.list-size .form-check .form-check-input.xs::before {
+  content: "XS";
+  font-weight: bold;
+}
+
+.list-size .form-check .form-check-input:checked,
+.list-category .form-check .form-check-input:checked {
+  color: #fff;
+  background: #db3022;
+  border: 1px solid #db3022;
+}
+
+/* Category */
+.list-category .form-check .form-check-input.all::before {
+  content: "All";
+  font-weight: bold;
+}
+
+.list-category .form-check .form-check-input.women::before {
+  content: "Women";
+  font-weight: bold;
+}
+
+.list-category .form-check .form-check-input.men::before {
+  content: "Men";
+  font-weight: bold;
+}
+
+.list-category .form-check .form-check-input.boys::before {
+  content: "Boys";
+  font-weight: bold;
+}
+
+.list-category .form-check .form-check-input.girls::before {
+  content: "Girls";
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -517,5 +700,40 @@ form button.submit {
     height: 30px;
     margin-top: 20px;
     margin-left: 0;
+  }
+
+  /* Modal Filter */
+  .modal.fade.show .modal-dialog .modal-content {
+    width: 100%;
+  }
+
+  .list-color {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colors .list-color .form-check input {
+    margin: unset;
+  }
+
+  .size .list-size .form-check input {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .size .list-size .form-check,
+  .category .list-category .form-check {
+    margin-right: .5rem;
+  }
+
+  .category .list-category .form-check input {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .modal-footer .button {
+    width: 120px;
+    height: 30px;
   }
 }
