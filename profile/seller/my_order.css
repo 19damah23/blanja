@@ -230,7 +230,7 @@ ul.detail-order li.detail-order-item a {
 ul.detail-order li.detail-order-item a.active {
   color: #db3022;
   border-bottom: 3px solid #db3022;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 
 form {
@@ -286,6 +286,10 @@ a#dropdownMenuLink3 {
   line-height: 24px;
   color: #222222;
   opacity: 0.8;
+}
+
+hr {
+  margin: 11px 0;
 }
 
 @media (min-width: 992px) {

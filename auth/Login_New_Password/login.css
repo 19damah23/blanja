@@ -44,49 +44,7 @@ body {
 
 main {
   text-align: center;
-}
-
-.role {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-main .role a {
-  width: 123px;
-  height: 48px;
-  padding: unset;
-  margin: unset;
-  border-style: unset;
-  border: 1px solid #9b9b9b;
-  background: transparent;
-  cursor: pointer;
-  color: #9b9b9b;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main .role a.customer {
-  border-right: unset;
-  border-radius: 4px 0 0 4px;
-}
-
-main .role a.seller {
-  border-left: unset;
-  border-radius: 0 4px 4px 0;
-}
-
-main .role a:hover {
-  background-color: #db3022;
-  color: #fff;
-}
-
-main .role a.active {
-  background-color: #db3022;
-  color: #fff;
+  width: 400px;
 }
 
 main .form {
@@ -135,6 +93,16 @@ main h5 {
   margin: 40px 0 50px;
 }
 
+main span {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
 main h5.ask {
   font-style: normal;
   font-weight: 400;
@@ -152,16 +120,18 @@ main h5.ask a {
   .container {
     min-height: 100vh;
   }
-  
+
+  main {
+    width: 300px;
+  }
+
   main h5 {
     font-size: 14px;
     margin: 20px 0 30px;
   }
 
-  main .role a {
-    width: 80px;
-    height: 30px;
-    font-size: 12px;
+  main span {
+    font-size: 10px;
   }
 
   main .form {
