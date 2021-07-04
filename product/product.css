@@ -541,11 +541,15 @@ li.store {
 }
 
 /* Modal Filter */
+.modal-content .modal-header .btn-close {
+  margin: unset;
+}
+
 .modal-content {
   width: 450px;
 }
 
-.modal-header {
+.modal-content .modal-header {
   justify-content: flex-start;
   padding: 5px;
   box-shadow: 0px 0px 6px rgba(53, 50, 50, 0.25);
@@ -590,8 +594,7 @@ li.store {
 .modal-content .colors .list-color .form-check {
   padding-left: 0;
 }
-.form-check-input,
-.form-check-input:checked,
+
 .modal-content .colors .list-color .form-check input {
   width: 36px;
   height: 36px;
@@ -658,42 +661,45 @@ li.store {
 }
 
 .color-checked .form-check-input.black,
-.form-check .black {
+.form-check .form-check-input.black {
   background: #000;
 }
 
-.color-checked .form-check-input.white,
-.form-check .white {
+.form-check .form-check-input.white {
   background: #fff;
   box-shadow: 1px 1px #8e8e8e;
 }
 
 .color-checked .form-check-input.red,
-.form-check .red {
+.form-check .form-check-input.red {
   background: #db3022;
 }
 
-.color-checked .form-check-input.gray,
-.form-check .gray {
+.form-check .form-check-input.gray {
   background: #8e8e93;
 }
 
-.color-checked .form-check-input.cream,
-.form-check .cream {
+.form-check .form-check-input.cream {
   background: #e2bb8d;
 }
 
 .color-checked .form-check-input.blue,
-.form-check .blue {
+.form-check .form-check-input.blue {
   background: #151867;
 }
 
-.color-checked .form-check-input.green,
-.form-check .green {
+.color-checked .form-check-input.green {
   background: #42D86C;
 }
 
-.color-checked .form-check-input:checked,
+input#radioNoLabel1 {
+  border: 3px solid #fff;
+}
+
+input#radioNoLabel1:checked {
+  box-shadow: 0 0 0 1px #db3022;
+}
+
 .colors .form-check .form-check-input:checked {
   box-shadow: 0 0 0 1px #db3022;
   background-image: unset;
@@ -891,7 +897,8 @@ li.store {
     font-size: 18px;
   }
 
-  .form-check-input, .form-check-input:checked {
+  .form-check-input,
+  .color-checked .form-check-input:checked {
     margin: 5px 0 0 0;
   }
 
@@ -942,26 +949,26 @@ li.store {
     width: 100%;
   }
 
-  .list-color {
+  .modal-content .colors .list-color {
     display: flex;
     justify-content: space-between;
   }
 
-  .colors .list-color .form-check input {
+  .modal-content .colors .list-color .form-check input {
     margin: unset;
   }
 
-  .size .list-size .form-check input {
+  .modal-content .size .list-size .form-check input {
     width: 35px;
     height: 35px;
     font-size: 14px;
   }
-  .size .list-size .form-check,
-  .category .list-category .form-check {
+  .modal-content .size .list-size .form-check,
+  .modal-content .category .list-category .form-check {
     margin-right: .5rem;
   }
 
-  .category .list-category .form-check input {
+  .modal-content .category .list-category .form-check input {
     width: 80px;
     height: 35px;
     font-size: 14px;
