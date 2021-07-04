@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="store.css">
+  <link rel="stylesheet" href="my_products.css">
   <title>Store profile | Blanja</title>
 </head>
 
@@ -42,11 +42,11 @@
               <path d="M10 14L16 9.33337L22 14V21.3334C22 21.687 21.8595 22.0261 21.6095 22.2762C21.3594 22.5262 21.0203 22.6667 20.6667 22.6667H11.3333C10.9797 22.6667 10.6406 22.5262 10.3905 22.2762C10.1405 22.0261 10 21.687 10 21.3334V14Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 22.6667V16H18V22.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>              
-              <span class="active">Store</span>
+              <span class="">Store</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item active" href="#">Store profle</a>
+                <a class="dropdown-item" href="./store.html">Store profle</a>
               </li>
             </ul>
           </li>
@@ -60,11 +60,11 @@
               <path d="M10.1802 12.64L16.0002 16.0067L21.8202 12.64" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16 22.72V16" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>                        
-              <span>Product</span>
+              <span class="active">Product</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" href="./my_products.html">My products</a>
+                <a class="dropdown-item active" href="./my_products.html">My products</a>
               </li>
               <li>
                 <a class="dropdown-item" href="./selling_product.html">Selling products</a>
@@ -120,7 +120,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbars" href="#">
+            <a class="nav-link navbars" href="../profile.html">
               <img class="profile" src="../../asset/profile-image.svg" alt="profile">
             </a>
           </li>
@@ -156,12 +156,12 @@
               <path d="M10 14L16 9.33337L22 14V21.3334C22 21.687 21.8595 22.0261 21.6095 22.2762C21.3594 22.5262 21.0203 22.6667 20.6667 22.6667H11.3333C10.9797 22.6667 10.6406 22.5262 10.3905 22.2762C10.1405 22.0261 10 21.687 10 21.3334V14Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 22.6667V16H18V22.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>              
-              <span class="active">Store</span>
+              <span class="">Store</span>
           </div>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item active" href="#">Store profle</a>
+              <a class="dropdown-item" href="./store.html">Store profle</a>
             </li>
           </ul>
         </li>
@@ -176,12 +176,12 @@
               <path d="M10.1802 12.64L16.0002 16.0067L21.8202 12.64" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16 22.72V16" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>                        
-              <span>Product</span>
+              <span class="active">Product</span>
           </div>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="./my_products.html">My products</a>
+              <a class="dropdown-item active" href="">My products</a>
             </li>
             <li>
               <a class="dropdown-item" href="./selling_products.html">Selling products</a>
@@ -215,54 +215,62 @@
 
     <div class="content">
       <div class="content-body">
-        <h3>My Profile</h3>
-        <span>Manage your profile information</span>
+        <h3>My Products</h3>
+
+        <ul class="detail-order">
+          <li class="detail-order-item"><a class="active" href="#">All items</a></li>
+          <li class="detail-order-item"><a href="#">Sold out</a></li>
+          <li class="detail-order-item"><a href="#">Archived</a></li>
+        </ul>
+
         <hr>
 
-        <form>
-          <div class="row">
-            <div class="col-8">
-              <div class="row">
-                <div class="col-3 label">
-                  <label for="name" class="col-form-label">Name</label>
-                </div>
-                <div class="col-9">
-                  <input type="text" id="name" class="form-control">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3 label">
-                  <label for="email" class="col-form-label">Email</label>
-                </div>
-                <div class="col-9">
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3 label">
-                  <label for="phone" class="col-form-label">Phone Number</label>
-                </div>
-                <div class="col-9">
-                  <input type="number" id="phone" class="form-control">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3 label">
-                  <label for="description" class="col-form-label">Store Description</label>
-                </div>
-                <div class="col-9">
-                  <textarea name="description" id="description" cols="" rows="3"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4 right">
-              <img src="../../asset/profile-image.svg" alt="">
-              <button>Select Image</button>
-            </div>
-          </div>
-          <button class="submit" type="submit">Save</button>
+        <form class="mt-3">
+          <img class="search" src="../../asset/Search Glyph.svg" alt="">
+          <input type="search" name="search" id="search" placeholder="Search">
         </form>
+
+        <div class="data mt-3">
+          <table class="table table-sm table-bordered">
+            <thead>
+              <tr>
+                <th>
+                  <a href="#"  class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">Product name</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                    <li><a class="dropdown-item" href="#">Kemeja</a></li>
+                    <li><a class="dropdown-item" href="#">Tas</a></li>
+                    <li><a class="dropdown-item" href="#">Celan</a></li>
+                  </ul>
+                </th>
+                <th>
+                  <a href="#"  class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Price</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                    <li><a class="dropdown-item" href="#">100.000</a></li>
+                    <li><a class="dropdown-item" href="#">200.000</a></li>
+                    <li><a class="dropdown-item" href="#">300.000</a></li>
+                  </ul>
+                </th>
+                <th>
+                  <a href="#"  class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Stock</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                    <li><a class="dropdown-item" href="#">10</a></li>
+                    <li><a class="dropdown-item" href="#">20</a></li>
+                    <li><a class="dropdown-item" href="#">30</a></li>
+                  </ul>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3" class="text-center">
+                  <img class="empty" src="../../asset/empty.svg" alt="Empty">
+                  <br>
+                  <span>You don't have a product yet</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </main>
