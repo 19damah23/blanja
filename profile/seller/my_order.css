@@ -266,15 +266,6 @@ img.empty {
   height: 200px;
 }
 
-table {
-  border-radius: 3px 3px;
-}
-
-table thead {
-  background: #f7f7f7;
-  height: 50px;
-}
-
 a#dropdownMenuLink1,
 a#dropdownMenuLink2,
 a#dropdownMenuLink3 {
@@ -287,7 +278,7 @@ a#dropdownMenuLink3 {
   text-decoration: none;
 }
 
-td.text-center span {
+.data.text-center span {
   font-family: Metropolis;
   font-style: normal;
   font-weight: 500;
@@ -379,15 +370,19 @@ td.text-center span {
     margin: 0;
   }
 
+  ul.detail-order {
+    justify-content: space-between;
+  } 
+
   ul.detail-order li {
-    margin-right: 20px;
+    margin-right: unset;
   }
 
   ul.detail-order li.detail-order-item a {
     font-size: 10px;
   }
 
-  td.text-center span {
+  .data.text-center span {
     font-size: 12px;
   }
 }
